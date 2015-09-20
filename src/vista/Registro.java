@@ -27,21 +27,21 @@ public class Registro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButtonSalirR = new javax.swing.JButton();
+        btnSalirR = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jTextFieldNick = new javax.swing.JTextField();
-        jPasswordCR = new javax.swing.JPasswordField();
-        jPasswordCRR = new javax.swing.JPasswordField();
+        textNick = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jButtonregistroR = new javax.swing.JButton();
+        btnRegistroR = new javax.swing.JButton();
+        passCR = new javax.swing.JTextField();
+        passCRR = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButtonSalirR.setBackground(new java.awt.Color(255, 0, 0));
-        jButtonSalirR.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
-        jButtonSalirR.setText("Salir");
+        btnSalirR.setBackground(new java.awt.Color(255, 153, 153));
+        btnSalirR.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        btnSalirR.setText("Salir");
 
         jLabel7.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         jLabel7.setText("Registro");
@@ -56,9 +56,9 @@ public class Registro extends javax.swing.JFrame {
         jLabel6.setText("Repetir Contraseña :");
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jButtonregistroR.setBackground(new java.awt.Color(0, 0, 255));
-        jButtonregistroR.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
-        jButtonregistroR.setText("Registrarse");
+        btnRegistroR.setBackground(new java.awt.Color(204, 204, 255));
+        btnRegistroR.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        btnRegistroR.setText("Registrarse");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -68,7 +68,7 @@ public class Registro extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButtonregistroR, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnRegistroR, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(44, 44, 44)
@@ -77,18 +77,18 @@ public class Registro extends javax.swing.JFrame {
                             .addComponent(jLabel4))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextFieldNick)
-                            .addComponent(jPasswordCR)))
+                            .addComponent(textNick)
+                            .addComponent(passCR)))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel6)
                                 .addGap(6, 6, 6)
-                                .addComponent(jPasswordCRR))
+                                .addComponent(passCRR))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jButtonSalirR, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(btnSalirR, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 169, Short.MAX_VALUE)
@@ -103,19 +103,19 @@ public class Registro extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextFieldNick, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textNick, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jPasswordCR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(passCR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jPasswordCRR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(passCRR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonregistroR)
-                    .addComponent(jButtonSalirR))
+                    .addComponent(btnRegistroR)
+                    .addComponent(btnSalirR))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -158,14 +158,14 @@ public class Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonSalirR;
-    private javax.swing.JButton jButtonregistroR;
+    public javax.swing.JButton btnRegistroR;
+    public javax.swing.JButton btnSalirR;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JPasswordField jPasswordCR;
-    private javax.swing.JPasswordField jPasswordCRR;
-    private javax.swing.JTextField jTextFieldNick;
+    public javax.swing.JTextField passCR;
+    public javax.swing.JTextField passCRR;
+    public javax.swing.JTextField textNick;
     // End of variables declaration//GEN-END:variables
 }

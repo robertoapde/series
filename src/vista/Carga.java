@@ -30,13 +30,14 @@ public class Carga extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextUsuarioC = new javax.swing.JTextField();
-        jButtonEntrarC = new javax.swing.JButton();
-        jButtonSalirC = new javax.swing.JButton();
-        jButtonRegistroC = new javax.swing.JButton();
-        jPasswordConC = new javax.swing.JPasswordField();
+        textUsuarioC = new javax.swing.JTextField();
+        btnEntrarC = new javax.swing.JButton();
+        btnSalirC = new javax.swing.JButton();
+        btnRegistroC = new javax.swing.JButton();
+        passConC = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 204, 255));
 
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
         jLabel1.setText("RememberTV");
@@ -50,22 +51,22 @@ public class Carga extends javax.swing.JFrame {
         jLabel3.setText("Contraseña :");
         jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButtonEntrarC.setBackground(new java.awt.Color(0, 153, 51));
-        jButtonEntrarC.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
-        jButtonEntrarC.setText("Entrar");
+        btnEntrarC.setBackground(new java.awt.Color(204, 204, 255));
+        btnEntrarC.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        btnEntrarC.setText("Entrar");
 
-        jButtonSalirC.setBackground(new java.awt.Color(255, 51, 51));
-        jButtonSalirC.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
-        jButtonSalirC.setText("Salir");
-        jButtonSalirC.addActionListener(new java.awt.event.ActionListener() {
+        btnSalirC.setBackground(new java.awt.Color(255, 153, 153));
+        btnSalirC.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        btnSalirC.setText("Salir");
+        btnSalirC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonSalirCActionPerformed(evt);
+                btnSalirCActionPerformed(evt);
             }
         });
 
-        jButtonRegistroC.setBackground(new java.awt.Color(51, 51, 255));
-        jButtonRegistroC.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
-        jButtonRegistroC.setText("Registrarse");
+        btnRegistroC.setBackground(new java.awt.Color(204, 204, 255));
+        btnRegistroC.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        btnRegistroC.setText("Registrarse");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,14 +76,14 @@ public class Carga extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButtonRegistroC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnRegistroC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButtonEntrarC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnEntrarC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButtonSalirC, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnSalirC, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel2)
@@ -95,8 +96,8 @@ public class Carga extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                         .addGap(18, 18, 18)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTextUsuarioC)
-                                            .addComponent(jPasswordConC))))))
+                                            .addComponent(textUsuarioC)
+                                            .addComponent(passConC))))))
                         .addGap(10, 10, 10))))
         );
         layout.setVerticalGroup(
@@ -107,26 +108,26 @@ public class Carga extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextUsuarioC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textUsuarioC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jPasswordConC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(passConC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonEntrarC)
-                    .addComponent(jButtonSalirC))
+                    .addComponent(btnEntrarC)
+                    .addComponent(btnSalirC))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonRegistroC)
+                .addComponent(btnRegistroC)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonSalirCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirCActionPerformed
+    private void btnSalirCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirCActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonSalirCActionPerformed
+    }//GEN-LAST:event_btnSalirCActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,13 +165,13 @@ public class Carga extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonEntrarC;
-    private javax.swing.JButton jButtonRegistroC;
-    private javax.swing.JButton jButtonSalirC;
+    public javax.swing.JButton btnEntrarC;
+    public javax.swing.JButton btnRegistroC;
+    public javax.swing.JButton btnSalirC;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPasswordField jPasswordConC;
-    private javax.swing.JTextField jTextUsuarioC;
+    public javax.swing.JPasswordField passConC;
+    public javax.swing.JTextField textUsuarioC;
     // End of variables declaration//GEN-END:variables
 }
